@@ -87,6 +87,9 @@ class ToolMessage(BaseMessage):
         """
         super().__init__(content=content, **kwargs)
 
+    def __str__(self):
+        return self.content
+
 
 ToolMessage.update_forward_refs()
 
